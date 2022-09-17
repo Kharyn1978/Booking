@@ -2,29 +2,30 @@
 body{
     background-color:#FFEECA ;
 }
-div.content{
-    height: 150px;
-    width: 150px;
-    border :5px solid#4faeed;
-    float :left ;
-    margin :20px ;
+
+.flexbox-container{
+    display :flex;
+}
+.flexbox-item{
+    width :200 px;
+    margin: 10px;
+    border :3px solid #333;
+    background-color: #025CB2;
+}
+.flexbox-item-1{
+    min-height: 100px;
+    flex-shrink :0 ;
 }
 
-div#hotel2{
-    background-image: ;
-
+.flex-item-2{
+    min-height :200 px ;
+    flex-grow : 2;
+    flex-basis : 0;
+    align-self :center ;
 }
 
-div#hotel3{
-    background-image: ;
-
-}
-
-div#hotel4{
-    background-image: ;
-
-}
-div#hotel5{
-    background-image: ;
-
+.flex-item-3{
+    min-height : 300px;
+    flex-grow : 1 ;
+    flex-basis :0 ;
 }
