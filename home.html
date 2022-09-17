@@ -4,36 +4,82 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="./css/style.css"> -->
-            <title>Hotel Booking App</title>   
-      <!-- <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"rel="stylesheet">-->
-   
+        <link rel="stylesheet" href="./css/style.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>Hotel Booking App</title>   
+       
 
-         <style > .box {
-                      width: 600px;
-                      height: 500px;
-                      padding : 20px;
-                      margin : 1oopx auto;
-                      box-shadow :0px 0px 10px 2px grey;
-                      border : 10px solid red ;
-                      font-family :sans-serif ;  
-                      background-image : url(bookingApp/images/robertoNickson.jpg);
-                      background-size: cover;
-                      text-align:center;
-         }
-         </style>
+
     </head>
 
     <body>
-           <div class="container">
-               <div class="box1"></div>
-                    
-               <div class="box2"></div>
-               <div class="box3"></div>
-               <div class="box"></div>
-            </div>
 
-        <form action="index.php" method ="post">
+        <header>
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/hotel1.jpg" alt="Bootstrap" width ="50" height="40"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupporttedContent" 
+                           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupporttedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Flights</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Car Rentals</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Attractions</a></li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Stays</a></li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Airport taxis</a></li>             
+                                            
+                              </ul>
+
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+
+                            </form>
+                        </div>
+                </div>
+
+            </nav>
+
+
+        </header>
+
+        <main>
+
+
+          <div class="container">
+               <div class="content" id="hotel2">hotel2</div>
+               <div class="content" id="hotel3">hotel3</div>
+               <div class="content" id="hotel4">hotel4</div>
+               <div class="content" id="hotel5">hotel5</div>
+             
+            </div>
+            
+          <style > .box {
+            width: 600px;
+            height: 500px;
+            padding : 20px;
+            margin : 1oopx auto;
+            box-shadow :0px 0px 10px 2px grey;
+            border : 10px solid rgb(192, 121, 121) ;
+            font-family :sans-serif ;  
+            background-size:cover;
+            text-align:center;
+           }
+          </style> 
+
+         <form action="index.php" method ="post">
 
             <label for ="firstname" >First Name </label >
             <input type ="text" name="firstname" required ="firstname"><br>
@@ -56,8 +102,8 @@
     
           <input type="submit">
         
-        </form>
-        
+         </form>
+        </main> 
     </body>
 
 </html>
