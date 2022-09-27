@@ -82,16 +82,19 @@ $hotel = array {
     
    <?php
 
-      $firstname = $_POST['firstname'];
-      $surnamme = $_POST['surname'];
-      $email = $_POST['email'];
-      $numbersOfDays = $_POST['numbersOfDays'];
-      $checkInDay = $_POST['checkInDay'];
-      $checkOutDay = $_POST['checkOutDay'];
+      $firstname = $_POST['firstname']. </br> ;
+      $surnamme = $_POST['surname']. </br> ;
+      $email = $_POST['email']. </br> ;
+      $numbersOfDays = $_POST['numbersOfDays']. </br> ;
+      $checkInDay = $_POST['checkInDay'] . </br> ;
+      $checkOutDay = $_POST['checkOutDay']. </br> ;
 
 
     //   echo "<p>Hello $firstName .$lastNamme.$email .$numberOfDays .$checkInDay.$checkOutDay</p>";
      echo $firstName;
     ?>
+
+
+
 
     
