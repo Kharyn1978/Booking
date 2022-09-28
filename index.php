@@ -4,17 +4,17 @@ session_start();
 
 include("Template/home.html");
 
-if(isset($_POSt['viewTrips'])){
+if(isset($_POST['viewTrips'])){
 
      $hotel = file_get_contents("hotelData.json");//open the json file_get_contents
      $hotel = json_decode($hotel); //decode the json file 
 
      $Userinput = array{
 
-        'search' => $_POST['search'],
-        'room' => $_POST['room'],
+        'search'=> $_POST['search'],
+        'room'=> $_POST['room'],
         'adults'=> $_POST['adults'],
-        'children' => $_POST['children'],
+        'children'=> $_POST['children'],
 
 
      };
@@ -47,7 +47,7 @@ class hotel{
     // getter method 
 
     public functtion getCheapest(){
-        echo $this -> hotelName.$this -> roomRate .$this -> offerPrice;
+       // echo $this -> hotelName.$this -> roomRate .$this -> offerPrice;
     }
 
 }
@@ -140,10 +140,10 @@ $hotel = array {
         <!-- "number of days > 0" -->
 
         <label for ="check in date" >check in date</label>
-        <input type ="date" >
+        <input type ="date" > <br>
     
         <label for ="check out date" >check out date</label>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-        <input type ="date" >
+        <input type ="date" > <br>
 
 
       <input type="submit">
@@ -160,9 +160,45 @@ $hotel = array {
       $checkOutDay = $_POST['checkOutDay']. </br> ;
 
 
-    //   echo "<p>Hello $firstName .$lastNamme.$email .$numberOfDays .$checkInDay.$checkOutDay</p>";
+    //   echo "<p>Hello $firstname .$surname.$email .$numberOfDays .$checkInDay.$checkOutDay</p>";
      echo $firstName;
     ?>
+
+    <table>
+         <tbody>
+
+        <?php
+        $hotel = file_get_contents("hotelData.json"); //fetch data from JSON file
+
+        $hotel = json_decode($hotel); // decode it into the php array
+
+        //Looping through each JSON property
+
+        foreach($hotel as $row)
+      
+        echo 
+        
+        "
+
+        <tr>
+
+
+        <td>".$row->hotelName"</td>
+        <td>".$row->roomRate"</td>
+        <td>".$row->offerPrice"</td>
+
+        </tr>
+        "
+
+       
+   
+
+    
+    
+    ?>
+
+        </tbody>
+    </table>
 
 
 
