@@ -1,31 +1,26 @@
 
 body{
-    background-color:#FFEECA ;
+    background-image: url("../images/hotel1.jpg");
+    background-position: center;
+    background-size: auto;
 }
 
-.flexbox-container{
-    display :flex;
-}
-.flexbox-item{
-    width :200 px;
-    margin: 10px;
-    border :3px solid #333;
-    background-color: #025CB2;
-}
-.flexbox-item-1{
-    min-height: 100px;
-    flex-shrink :0 ;
-}
+#form {
+    background-color: #000;
+    height :400px;
+    width :800px;
+    margin :auto;
+    margin-top:100px ;
+    opacity: 0.7 ;
 
-.flex-item-2{
-    min-height :200 px ;
-    flex-grow : 2;
-    flex-basis : 0;
-    align-self :center ;
 }
-
-.flex-item-3{
-    min-height : 300px;
-    flex-grow : 1 ;
-    flex-basis :0 ;
+#first-group{
+    border : 2px solid rgba(134, 245, 97, 0) ;
+    width :400px;
+    margin-top : 38px;
+    
+}
+#content{
+    border : 1px solid #fff;
+    margin : 10;
 }
