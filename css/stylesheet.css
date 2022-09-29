@@ -1,12 +1,12 @@
 
 body{
-    background-image: url("../images/hotel1.jpg");
+    
     background-position: center;
     background-size: auto;
 }
 
 #form {
-    background-color: #000;
+    background-color: rgb(19, 122, 232);
     height :400px;
     width :800px;
     margin :auto;
@@ -22,5 +22,16 @@ body{
 }
 #content{
     border : 1px solid #fff;
-    margin : 10;
+    margin : 10px;
+    margin-left: 8px;
+    padding : 5px;
+
 }
+#content #input-group {
+    border : none;
+    outline : none;
+    background : transparent;
+    margin-left: 8px;
+   
+}
+
