@@ -9,15 +9,14 @@ if(isset($_POST['viewTrips'])){
      $hotel = file_get_contents("hotelData.json");//open the json file_get_contents
      $hotel = json_decode($hotel); //decode the json file 
 
-     $Userinput = array{
+     $Userinput = array(
 
         'search'=> $_POST['search'],
         'room'=> $_POST['room'],
         'adults'=> $_POST['adults'],
         'children'=> $_POST['children'],
 
-
-     };
+     ),
 
      //append the input
 
@@ -72,54 +71,7 @@ $hotel_4-> getCheapest();
 
 
 
-$hotel = array {
 
-    $hotel_1=>array{
-
-        "Name"=>"Duchesse Francaise",
-        "Discount"=> 50,
-        "roorRate"  => 1500 , 
-        "offerPrice"=>function() {
-            $offerRate = this.roomrate * ((100 - this.discount)/100);
-            return $offerRate;
-        } 
-    },
-
-    $hotel_2=>array{
-
-        "Name"=>"Chez Model",
-        "Discount"=> 10,
-        "roorRate"  => 500 , 
-        "offerPrice"=>function() {
-            $offerRate = this.roomrate * ((100 - this.discount)/100);
-            return $offerRate;
-        } 
-    },
-
-    $hotel_3=>array{
-
-        "Name"=>"Maison Cherel",
-        "Discount"=> 8,
-        "roorRate"  => 1300 , 
-        "offerPrice"=>function() {
-            $offerRate = this.roomrate * ((100 - this.discount)/100);
-            return $offerRate;
-        } 
-    },
-
-    
-    $hotel_4=>array{
-
-        "Name"=>"Beach House",
-        "Discount"=> 20,
-        "roorRate"  => 1100 , 
-        "offerPrice"=>function() {
-            $offerRate = this.roomrate * ((100 - this.discount)/100);
-            return $offerRate;
-        } 
-    };
-
-}
 ?>
 
 
