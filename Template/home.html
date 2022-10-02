@@ -73,22 +73,21 @@
         </div>
       </nav>
     </header>
-    
 
     <main>
-        <div>
-         Photo by
-         <a
+      <div>
+        Photo by
+        <a
           href="https://unsplash.com/@ciudadmaderas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >Ciudad Maderas</a
-         >
-         on
-         <a
+        >
+        on
+        <a
           href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >Unsplash</a
-         >
+        >
 
-         <img
+        <img
           style="
             display: block;
             -webkit-user-select: none;
@@ -100,72 +99,121 @@
           src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
           width="1920"
           height="1080"
-         />
+        />
 
-          <div class="container">
-           <form class="form-group">
-            <form-group action="index.php" method="post"></form>
-              <div id="form">
-                <h1 class="text-black text-center"> Book Here !</h1>
-
-                <div id="first-group">
-
-                 <div id="content">
-                     <i class="fa fa-user-circle" aria-hidden="true"></i>
-                     <label for="firstname">First Name </label>
-                     <input type="text" id="input-group" name="firstname" required="firstname"/><br />
-                 </div>
-
-                 <div id="content">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    <label for="surname">surname</label>
-                    <input type="text" id="input-group" name="surname" required="surname" /><br />
-                 </div>
-
-                 <div id="content">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <label for="email">email </label>
-                    <input type="text" name="email" required="email" /><br />
-                 </div>
-                 <!-- "number of days > 0" -->
-                 <div id="content">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <label for="check in date">check in date</label>
-                    <input type="date" />
-                 </div>
-
-                 <div id="content">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <label for="check out date">check out date</label>
-                    <input type="date" />
-                 </div>
-
-                 <div id="content">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    <select id="input-group"> 
-                        <option value ="">Number of guest</option> 
-                        <option value="">1-5</option>
-                        <option value="">6-10</option>
-                        <option value="">10-15</option>
-                    </select>
-                 </div>
-
-
-
-
-                 <input type="submit" />
+        <div id="booking" class="section">
+          <div class="section-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="booking-cta">
+                    <h1>Pour Vos Reservations d'Hotel</h1>
+                    <h2>Vous servir c'est notre fierte. Pour votre plaisir, les excurtions, la belle vue ,l'ambiance pour 
+                                      vous detendre, par nos services, nous nous speciallisons dans l'hebergement, l'honneur de bien vous servir ,notre soucis.
+                                  </h2>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                  <div class="booking-form">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="text">
+                            <span class="form-label">FirstName</span>
+                          </div>
+                        </div>
+                                          <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="text">
+                            <span class="form-label">Surname</span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="email">
+                            <span class="form-label">Email</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="tel">
+                            <span class="form-label">Phone</span>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="form-group">
+                            <span class="form-label">Rooms</span>
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="form-group">
+                            <span class="form-label">Adults</span>
+                            <select class="form-control">
+                              <option>1 Person</option>
+                              <option>2 People</option>
+                              <option>3 People</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                                          <div class="col-md-3 col-sm-6">
+                          <div class="form-group">
+                            <span class="form-label">Children</span>
+                            <select class="form-control">
+                              <option>1 Person</option>
+                              <option>2 People</option>
+                              <option>3 People</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="date" required>
+                            <span class="form-label">Check In</span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" type="date" required>
+                            <span class="form-label">Check Out</span>
+                          </div>
+                        </div>
+                      </div>
+                                      <div class="row">
+                                          <select id="input-group"> 
+                                              <option value ="">Number of days</option> 
+                                              <option value="">1-5</option>
+                                              <option value="">6-10</option>
+                                              <option value="">10-15</option>
+                                          </select>
+                                      </div>
+      
+                      <div class="form-btn">
+                        <button class="submit-btn">Enter</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-
-              
-                
-                  
-            </div>
-            </form>
-          </form>
             </div>
           </div>
         </div>
+
+
+
+      </div>
     </main>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
